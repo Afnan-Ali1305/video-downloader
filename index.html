@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact us</a>
+            <a href="#faq">Faq</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="section">
+            <h1>Welcome to Video Downloader</h1>
+            <p>This is a simple tool to download videos from the web.</p>
+            <div class="downloader">
+                <input type="text" id="url-input" placeholder="Paste URL">
+                <div class="format-selection">
+                    <label>
+                        <input type="radio" name="format" value="video" checked> Video
+                    </label>
+                    <label>
+                        <input type="radio" name="format" value="audio"> Audio
+                    </label>
+                </div>
+                <select id="quality-select" class="quality-select">
+                    <option value="720p">720p</option>
+                    <option value="1080p" selected>1080p</option>
+                    <option value="1440p">1440p</option>
+                    <option value="2160p">2160p (4K)</option>
+                </select>
+                <button id="download-btn">Download</button>
+            </div>
+            <div id="status-message"></div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>Learn more about our video downloader service.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for support or inquiries.</p>
+        </section>
+
+        <section id="faq" class="section">
+            <h2>FAQ</h2>
+            <p>Frequently asked questions about using the downloader.</p>
+        </section>
+    </main>
+
+    <!-- Downloads Manager -->
+    <div id="downloads-manager" class="downloads-manager">
+        <div class="downloads-header">
+            <span>Downloads</span>
+            <button id="clear-downloads-btn">Clear All</button>
+        </div>
+        <div id="downloads-list" class="downloads-list">
+            <!-- Downloads will be added here -->
+        </div>
+    </div>
+</body>
+</html>
